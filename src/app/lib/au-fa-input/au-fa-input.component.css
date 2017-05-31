@@ -1,0 +1,28 @@
+.icon {
+  width:20px;
+  text-align: center;
+  padding-left: 5px;
+  padding-right: 2px;
+  border:none;
+  vertical-align: middle;
+}
+
+:host {
+  border-width:1px;
+  border-style: solid;
+  padding: 1px 0;
+  display: inline-block;
+}
+
+:host(.input-focus) {
+  border-color: #4D90FE;
+  -webkit-box-shadow: 0 0 5px  #4D90FE;
+  box-shadow: 0 0 5px  #4D90FE;
+}
+
+:host /deep/ input {
+  border:none ;
+  outline: none;
+  height: 100%;
+  box-sizing: border-box;
+}
