@@ -1,3 +1,7 @@
+/*
+* Contain all the component and directives for the lib
+* */
+
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {AuFaInputComponent} from './au-fa-input/au-fa-input.component';

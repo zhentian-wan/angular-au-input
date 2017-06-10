@@ -1,12 +1,11 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
-import { AppComponent } from './app.component';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {FormsModule} from '@angular/forms';
+import {HttpModule} from '@angular/http';
+import {AppComponent} from './app.component';
 
 import 'rxjs/add/operator/map';
-import {AuInputModule} from "./lib/au-input.module";
-
+import {AuInputModule} from './lib/au-input.module';
 
 
 @NgModule({
@@ -17,9 +16,10 @@ import {AuInputModule} from "./lib/au-input.module";
     BrowserModule,
     FormsModule,
     HttpModule,
-     AuInputModule
+    AuInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
