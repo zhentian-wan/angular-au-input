@@ -31,9 +31,22 @@ describe('AppComponent', () => {
     fixture.detectChanges();
   });
 
+  it('should create the test application', async() => {
+
+    expect(component).toBeTruthy();
+  });
+
+  it('should create a font awesome email input', async() => {
+    expect(emailField).toBeTruthy();
+  });
+
   it('should include the correct email icon inside the email input', async() => {
     // debug a component html
     console.log(emailField.nativeElement.outerHTML);
-    expect(emaailField.query(By.css('i.icon.fa.fa-envelope'))).toBeTruthy();
+    expect(emailField.query(By.css('i.icon.fa.fa-envelope'))).toBeTruthy();
+  });
+
+  it('should have projected the correct test input inside the email field', async() => {
+    expect(emailField.query(By.css('input.test-class'))).toBeTruthy();
   });
 });
